@@ -44,12 +44,13 @@ public class FileUpload {
 			ArrayList<String> request = new ArrayList<String>();
 			request.add(driver.findElement(By.id("uploaded-files")).getText());
 			request.add(driver.findElement(By.xpath("//*[@id=\"content\"]/div/h3")).getText());
-			System.out.println("wao");
+			System.out.println("Added necessary data");
 			mp.put("RequestId"+count, request);
 			System.out.println(mp);
 			sendemail(mp);
+			System.out.println("Added necessary data");
 			count++;
-                        System.out.println("wao");
+            System.out.println("wao");
 			
 		}
 		
